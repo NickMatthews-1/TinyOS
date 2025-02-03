@@ -35,3 +35,40 @@ Upon doing that you will be greeted by the Kernel Configuration screen. Here is 
 - In Executable File Formats enable Kernel Support for ELF binaries
 - You can now exit the Kernel Configuration menu. It will ask if you want to save the config. The answer is yes.
 
+## Step 4: Making Inital Kernel
+
+Congrats you can now make the initial kernel. To do this it is as simple as
+
+``` make -jX ```
+
+The X is in place of the amount of processors your CPU has.
+
+
+## Step 5: Testing
+
+After making the initial kernel I advise that you test this kernel by trying to run it. This can be done with QEMU from the commandline,
+with the following command
+
+``` qemu-system-x86_64 -kernel arch/x86/boot/bzImage ```
+
+This will open up a QEMU window and start the booting process for the new kernel. However, at this point in time the OS will just panic.
+This is an expected outcome. This is due to the fact that there is no init and the kernel panics. Do not worry. This is what we want.
+
+## Step 6: Making Init
+
+Firstly you will need to take the shell.c (file)[shell.c] found in this repo and compiling it with gcc. This is done with the following command.
+
+```gcc -c shell.c```
+This will output "shell.o" as the output.
+
+Now take the sys.S (file)[sys.S] from this repo and compile that with as. This is done with the following command
+
+```as sys.S```
+This will output "a.out" as the output.
+
+
+You now need to link these two together using the LD Linker. This is done with the following command.
+
+```ld -o shell shell.o a.out --entry main -z noexecstack```
+
+This will now link these two together into one file.
