@@ -5,5 +5,5 @@ So howdy there. I have created a new OS that I am calling TinyOS. At the moment 
 Thats pretty much it. It can boot with QEMU at the moment using the following command.
 
 ```
-qemu-system-x86_64 -cdrom arch/x86/boot/image.iso
+qemu-system-x86_64 -cdrom image.iso
 ```
