@@ -10,3 +10,11 @@ After you have downloaded and extracted the Linux Kernel into a place of your ch
 To do this is actually rather simple.
 
 Go into your terminal in the root of your newly extracted kernel and type ```make mrproper``` and then ```make tinyconfig```
+
+You will now see an output from running ```make tinyconfig``` the output will be "configuration written to .config.
+
+This is important as that confirms you are ready to move onto making changes to the config.
+
+## Step 3: Making Config Changes
+
+
