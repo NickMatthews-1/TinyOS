@@ -17,3 +17,5 @@ With that you can do things with Lua but not much else. The only way to exit Lua
 <!-- make isoimage FDARGS="initrd=/init.cpio" FDINITRD=../fun/init.cpio -->
 <!-- ld -o shell shell.o a.out --entry main -z noexecstack  -->
 <!-- gcc -static shell.c -o shell -->
+<!-- cat files | cpio -H newc -o > init.cpio -->
+<!-- echo init >> files -->
