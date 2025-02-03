@@ -14,3 +14,6 @@ With that you can do things with Lua but not much else. The only way to exit Lua
 
 
 <!-- This part is for the dumbass that made this OS -->
+<!-- make isoimage FDARGS="initrd=/init.cpio" FDINITRD=../fun/init.cpio -->
+<!-- ld -o shell shell.o a.out --entry main -z noexecstack  -->
+<!-- gcc -static shell.c -o shell -->
