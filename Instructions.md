@@ -56,12 +56,12 @@ This is an expected outcome. This is due to the fact that there is no init and t
 
 ## Step 6: Making Init
 
-Firstly you will need to take the shell.c [shell.c](file) found in this repo and compiling it with gcc. This is done with the following command.
+Firstly you will need to take the shell.c [file](shell.c) found in this repo and compiling it with gcc. This is done with the following command.
 
 ```gcc -c shell.c```
 This will output "shell.o" as the output.
 
-Now take the sys.S [sys.S](file) from this repo and compile that with as. This is done with the following command
+Now take the sys.S [file](sys.S) from this repo and compile that with as. This is done with the following command
 
 ```as sys.S```
 This will output "a.out" as the output.
