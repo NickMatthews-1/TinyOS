@@ -20,7 +20,7 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.1.tar.xz
 
 ## Instructions!
 
-I made a special instructions file for this [here](instructions.md) that can be used to learn how to make your own TinyOS!
+I made a special instructions file for this [here](Instructions.md) that can be used to learn how to make your own TinyOS!
 
 
 
