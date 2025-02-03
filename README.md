@@ -25,3 +25,6 @@ https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.1.tar.xz
 <!-- echo init >> files -->
 <!-- echo lua >> files -->
 <!-- make isoimage FDARGS="initrd=/init.cpio" FDINITRD=~/fun/init.cpio -->
+
+[!CAUTION]
+the person fhat made this is slightly stupid
