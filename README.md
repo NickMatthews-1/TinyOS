@@ -17,14 +17,12 @@ This operating system was made with the 6.13.1 Linux Kernel and can be found at
 
 https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.1.tar.xz
 
-<!-- This part is for the dumbass that made this OS -->
-<!-- make isoimage FDARGS="initrd=/init.cpio" FDINITRD=../fun/init.cpio -->
-<!-- ld -o shell shell.o a.out --entry main -z noexecstack  -->
-<!-- gcc -static shell.c -o shell -->
-<!-- cat files | cpio -H newc -o > init.cpio -->
-<!-- echo init >> files -->
-<!-- echo lua >> files -->
-<!-- make isoimage FDARGS="initrd=/init.cpio" FDINITRD=~/fun/init.cpio -->
+
+## Instructions!
+
+I made a special instructions file for this [here](instructions.md) that can be used to learn how to make your own TinyOS!
+
+
 
 > [!CAUTION]
-> the person fhat made this is slightly stupid
+> the person that made this is slightly stupid
