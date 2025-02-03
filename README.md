@@ -11,3 +11,6 @@ qemu-system-x86_64 -cdrom image.iso
 With this operating system it currently does absolutely nothing other then just use Lua by doing ```/Lua```
 
 With that you can do things with Lua but not much else. The only way to exit Lua is by doing ```os.exit()```
+
+
+<!-- This part is for the dumbass that made this OS -->
